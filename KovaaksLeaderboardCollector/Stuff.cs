@@ -39,7 +39,6 @@ namespace KovaaksLeaderboardCollector
             }
             await Task.WhenAll(tasks);
 
-            var benchmarkLeaderboard = new List<KvksBenchmarkUser>();
             Console.WriteLine($"found {taskleaderboards.Count} taskleaderboards!");
 
             if(!Directory.Exists("./leaderboards/")) Directory.CreateDirectory("./leaderboards/");
